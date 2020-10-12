@@ -1,0 +1,32 @@
+{
+  "name": "chrome-extension-template",
+  "version": "1.0.0",
+  "description": "templatized chrome extension with webpack + more",
+  "author": "Samuel Thomas",
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint src",
+    "build": "webpack",
+    "build:watch": "webpack --watch"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint",
+      "pre-push": "npm run lint"
+    }
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^6.0.3",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-prettier": "^3.1.3",
+    "husky": "^4.2.5",
+    "prettier": "1.19.1",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "tiny-atom": "^4.2.2"
+  }
+}
